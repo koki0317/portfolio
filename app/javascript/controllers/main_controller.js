@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="main"
 export default class extends Controller {
-  static targets = ["navMenu", "skillsContentOpen", "skillsContentClose"]
+  static targets = ["navMenu", "skillsContentOpen", "skillsContentClose", "education", "work"]
 
   connect() {
     console.log("Hello")
@@ -16,17 +16,8 @@ export default class extends Controller {
     this.navMenuTarget.classList.remove("show-menu")
   }
 
-  //Accordion
+  Accordion
   toggleSkillsOpen() {
-    // let itemClass = this.skillsContentOpenTarget.classList.value
-    // console.log(itemClass)
-    // if (itemClass === "skills__content skills__open") {
-    //   console.log("close")
-    //   itemClass = "skills__content skills__close"
-    // } else {
-    //   console.log("open")
-    //   itemClass = "skills__content skills__open"
-    // }
     if (this.skillsContentOpenTarget.classList.value === "skills__content skills__open") {
       return this.skillsContentOpenTarget.classList.value = "skills__content skills__close"
     } else {
@@ -39,6 +30,20 @@ export default class extends Controller {
       return this.skillsContentCloseTarget.classList.value = "skills__content skills__open"
     } else {
       return this.skillsContentCloseTarget.classList.value = "skills__content skills__close"
+    }
+  }
+
+  educationClick() {
+    if (this.educationTarget.className === "qualification__content") {
+      this.educationTarget.classList.add("qualification__active")
+      this.workTarget.classList.remove("qualification__active")
+    }
+  }
+
+  workClick() {
+    if (this.workTarget.className === "qualification__content") {
+      this.educationTarget.classList.remove("qualification__active")
+      this.workTarget.classList.add("qualification__active")
     }
   }
 }
