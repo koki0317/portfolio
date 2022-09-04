@@ -43,7 +43,7 @@
     </div>
   </nav>
 </header>
-<main class="main">
+<main class="main" data-controller="main">
   <section class="home section" id="home">
     <div class="home__container container grid">
       <div class="home__content grid">
@@ -118,8 +118,8 @@
     <div class="skills__container container grid">
       <div>
         <%# Skill 1 %>
-        <div class="skills__content skills__open" data-main-target="skillsContent">
-          <div class="skills__header" data-action="click->main#toggleSkills">
+        <div class="skills__content skills__open" data-main-target="skillsContentOpen">
+          <div class="skills__header" data-action="click->main#toggleSkillsOpen">
             <i class="uil uil-brackets-curly skills__icon"></i>
             <div>
               <h1 class="skills__title">Frontend developer</h1>
@@ -167,8 +167,8 @@
           </div>
         </div>
         <%# Skill 2 %>
-        <div class="skills__content skills__close" data-main-target="skillsContent">
-          <div class="skills__header" data-action="click->main#toggleSkills">
+        <div class="skills__content skills__close" data-main-target="skillsContentClose">
+          <div class="skills__header" data-action="click->main#toggleSkillsClose">
             <i class="uil uil-server-network skills__icon"></i>
             <div>
               <h1 class="skills__title">Backend developer</h1>
