@@ -509,7 +509,7 @@
     </div>
   </section>
   <%# Portfolio %>
-  <section class="portfolio secition" id="portfolio">
+  <section class="portfolio section" id="portfolio">
     <h2 class="section__title">Portfolio</h2>
     <span class="section__subtitle">Most recent work</span>
     <div class="portfolio__container container swiper mySwiper" data-controller="carousel">
@@ -549,12 +549,93 @@
         </div>
       </div>
       <div class="swiper-button-next">
-        <i class="uil uil-angle-right-b"></i>
+        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
       </div>
       <div class="swiper-button-prev">
-        <i class="uil uil-angle-left-b"></i>
+        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
       </div>
       <div class="swiper-pagination"></div>
     </div>
   </section>
+  <%# Project %>
+  <section class="project section">
+    <div class="project__bg">
+      <div class="project__container container grid">
+        <div class="project__data">
+          <h2 class="project__title">You have a new project</h2>
+          <p class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vitae repellat! Molestias officia consequatur, illo ab ducimus similique nam dolorum maiores perferendis non a, eum provident hic quisquam quia odit!</p>
+          <a href="#contact" class="button button--flex button--white">
+            Contact Me <i class="uil uil-message project__icon button__icon"></i>
+          </a>
+        </div>
+        <img src="" alt="" class="project__img">
+      </div>
+    </div>
+  </section>
+  <%# <section class="testimonial section">
+    <h2 class="section__title">Testimonial</h2>
+    <span class="section__subtitle">My client saying</span>
+    <div class="testimonial__container container">
+      <div>
+        <div class="testimonial__content">
+          <div class="testimonial__data">
+            <div class="testimonial__header">
+              <img src="" alt="" class="testimonial__img">
+              <div>
+                <h3 class="testimonial__name">Sara</h3>
+                <span class="testimonial__client">Client</span>
+              </div>
+            </div>
+            <div>
+              <i class="uil uil-star testimonial__icon-star"></i>
+              <i class="uil uil-star testimonial__icon-star"></i>
+              <i class="uil uil-star testimonial__icon-star"></i>
+              <i class="uil uil-star testimonial__icon-star"></i>
+              <i class="uil uil-star testimonial__icon-star"></i>
+            </div>
+          </div>
+          <p class="testimonial__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum autem at necessitatibus vero id? Magnam laborum voluptatum nostrum dolorem facilis, quam deserunt quas modi nobis, ut laudantium eum incidunt mollitia.</p>
+        </div>
+      </div>
+    </div>
+  </section> %>
+  <%# Contact Me %>
+  <%# <h2 class="section__title">Contact Me</h2>
+  <span class="section__subtitle">Get in touch</span>
+  <div class="contact__container container grid">
+    <div>
+      <div class="contact__information">
+      <i class="uil uil-mobile-android-alt contact__icon"></i>
+      </div>
+    </div>
+  </div> %>
+  <footer class="footer">
+    <div class="footer__bg">
+      <div class="footer__container container grid">
+        <div>
+          <h1 class="footer__title">Koki</h1>
+          <span class="footer__subtitle">Frontend developer</span>
+        </div>
+        <ul class="footer__links">
+          <li>
+            <a href="#services" class="footer__link">
+              Services</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="footer__link">
+              Portfolio</a>
+          </li>
+          <li>
+            <a href="#contact" class="footer__link">
+              Contact Me</a>
+          </li>
+        </ul>
+        <div class="footer__socials">
+          <a href="#" class="footer__social" target="_blank"><i class="uil uil-linkedin"></i></a>
+          <a href="#" class="footer__social" target="_blank"><i class="uil uil-github"></i></a>
+        </div>
+      </div>
+      <p class="footer__copy">&#169; Koki Takahashi. All right reserved</p>
+    </div>
+  </footer>
 </main>
