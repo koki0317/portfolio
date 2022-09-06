@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="main"
 export default class extends Controller {
-  static targets = ["navMenu", "skillsContentOpen", "skillsContentClose", "education", "work"]
+  static targets = ["navMenu", "skillsContentOpen", "skillsContentClose", "education", "work", "modal"]
   connect() {
     console.log("Hello")
   }
@@ -48,7 +48,7 @@ export default class extends Controller {
 
   modalOpen(event) {
     console.log(event.currentTarget)
-    const modal = event.currentTarget.querySelector(".services__modal")
+    const modal = event.currentTarget
     modal.classList.toggle("active-modal")
   }
 }
