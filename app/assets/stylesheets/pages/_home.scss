@@ -3,7 +3,7 @@
   --header-height: 3rem;
 
   //color
-  --hue-color: 250;
+  --hue-color: 227;
 
   --first-color: hsl(var(--hue-color), 69%, 61%);
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
@@ -456,25 +456,25 @@ img {
 }
 
 .skills__html {
-  width: 90%;
+  width: 60%;
 }
 .skills__css {
-  width: 80%;
+  width: 65%;
 }
 .skills__js {
-  width: 60%;
+  width: 55%;
 }
 .skills__react {
   width: 85%;
 }
-.skills__php {
-  width: 80%;
-}
-.skills__node {
+.skills__ruby {
   width: 70%;
 }
-.skills__firebase {
-  width: 90%;
+.skills__rails {
+  width: 65%;
+}
+.skills__sql {
+  width: 60%;
 }
 .skills__python {
   width: 55%;
@@ -1080,7 +1080,8 @@ img {
   }
 
   .services__container {
-    grid-template-columns: repeat(3, 238px);
+    grid-template-columns: repeat(2, 238px);
+    column-gap: 5rem;
   }
 
   .portfolio__content {
