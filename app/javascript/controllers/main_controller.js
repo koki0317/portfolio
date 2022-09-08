@@ -31,29 +31,29 @@ export default class extends Controller {
     }
   }
 
-  educationClick() {
-    if (this.educationTarget.className === "qualification__content") {
-      this.educationTarget.classList.add("qualification__active")
-      this.workTarget.classList.remove("qualification__active")
-    }
-  }
+  // educationClick() {
+  //   if (this.educationTarget.className === "qualification__content") {
+  //     this.educationTarget.classList.add("qualification__active")
+  //     this.workTarget.classList.remove("qualification__active")
+  //   }
+  // }
 
-  workClick() {
-    if (this.workTarget.className === "qualification__content") {
-      this.educationTarget.classList.remove("qualification__active")
-      this.workTarget.classList.add("qualification__active")
-    }
-  }
+  // workClick() {
+  //   if (this.workTarget.className === "qualification__content") {
+  //     this.educationTarget.classList.remove("qualification__active")
+  //     this.workTarget.classList.add("qualification__active")
+  //   }
+  // }
 
   modalOpen(event) {
     console.log(event.currentTarget)
-    const modal = event.currentTarget
+    const modal = event.currentTarget.querySelector(".services__modal")
     modal.classList.toggle("active-modal")
   }
 
-  scrollActive() {
-    const scrollY = window.pageYOffset
-    console.log("Hey")
-  }
+  // scrollActive() {
+  //   const scrollY = window.pageYOffset
+  //   console.log("Hey")
+  // }
 
 }
