@@ -15,7 +15,6 @@ export default class extends Controller {
     this.navMenuTarget.classList.remove("show-menu")
   }
 
-  Accordion
   toggleSkillsOpen() {
     if (this.skillsContentOpenTarget.classList.value === "skills__content skills__open") {
       return this.skillsContentOpenTarget.classList.value = "skills__content skills__close"
