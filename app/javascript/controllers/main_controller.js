@@ -1,33 +1,52 @@
-import { Controller } from "@hotwired/stimulus"
+import { Controller } from "@hotwired/stimulus";
 
 // Connects to data-controller="main"
 export default class extends Controller {
-  static targets = ["navMenu", "skillsContentOpen", "skillsContentClose", "education", "work", "modal", "scroll"]
+  static targets = [
+    "navMenu",
+    "skillsContentOpen",
+    "skillsContentClose",
+    "education",
+    "work",
+    "modal",
+    "scroll",
+  ];
   connect() {
-    console.log("Hello")
+    console.log("Hello");
   }
 
   navToggle() {
-    this.navMenuTarget.classList.add("show-menu")
+    console.log("Hey");
+    this.navMenuTarget.classList.add("show-menu");
   }
 
   navClose() {
-    this.navMenuTarget.classList.remove("show-menu")
+    this.navMenuTarget.classList.remove("show-menu");
   }
 
   toggleSkillsOpen() {
-    if (this.skillsContentOpenTarget.classList.value === "skills__content skills__open") {
-      return this.skillsContentOpenTarget.classList.value = "skills__content skills__close"
+    if (
+      this.skillsContentOpenTarget.classList.value ===
+      "skills__content skills__open"
+    ) {
+      return (this.skillsContentOpenTarget.classList.value =
+        "skills__content skills__close");
     } else {
-      return this.skillsContentOpenTarget.classList.value = "skills__content skills__open"
+      return (this.skillsContentOpenTarget.classList.value =
+        "skills__content skills__open");
     }
   }
 
   toggleSkillsClose() {
-    if (this.skillsContentCloseTarget.classList.value === "skills__content skills__close") {
-      return this.skillsContentCloseTarget.classList.value = "skills__content skills__open"
+    if (
+      this.skillsContentCloseTarget.classList.value ===
+      "skills__content skills__close"
+    ) {
+      return (this.skillsContentCloseTarget.classList.value =
+        "skills__content skills__open");
     } else {
-      return this.skillsContentCloseTarget.classList.value = "skills__content skills__close"
+      return (this.skillsContentCloseTarget.classList.value =
+        "skills__content skills__close");
     }
   }
 
@@ -46,14 +65,13 @@ export default class extends Controller {
   // }
 
   modalOpen(event) {
-    console.log(event.currentTarget)
-    const modal = event.currentTarget.querySelector(".services__modal")
-    modal.classList.toggle("active-modal")
+    console.log(event.currentTarget);
+    const modal = event.currentTarget.querySelector(".services__modal");
+    modal.classList.toggle("active-modal");
   }
 
   // scrollActive() {
   //   const scrollY = window.pageYOffset
   //   console.log("Hey")
   // }
-
 }
